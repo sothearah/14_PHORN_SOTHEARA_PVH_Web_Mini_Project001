@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./style.css -o ./output.css --watch",
+    "serve": "browser-sync start --server --files \"*.html, output.css\" --reload-delay 300 --reload-debounce 500 --watch",
+    "start": "npm-run-all --parallel dev serve"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "nodemon": "^3.1.11",
+    "npm-run-all": "^4.1.5"
+  }
+}
