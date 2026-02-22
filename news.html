@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="text-sm sticky top-0 z-1 bg-primary w-full">
+      <div class="m-auto h-16 bg-white">
+        <!-- white nav -->
+        <div class="flex flex-1 justify-around mx-auto items-center py-2">
+          <div>
+            <span class="text-lg text-primary">MED</span>
+            <span class="text-lg text-secondary">DICAL</span>
+          </div>
+          <div class="flex justify-center items-center">
+            <svg
+              class="text-accent w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="#1F2B6C"
+                d="M344-32c128.1 0 232 103.9 232 232 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM320 88c0-13.3 10.7-24 24-24 75.1 0 136 60.9 136 136 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88-13.3 0-24-10.7-24-24zM144.1 1.4c19.7-5.4 40.3 4.7 48.1 23.5l40.5 97.3c6.9 16.5 2.1 35.6-11.8 47l-44.1 36.1c32.5 71.6 89 130 159.3 164.9L374.7 323c11.3-13.9 30.4-18.6 47-11.8L519 351.8c18.8 7.8 28.9 28.4 23.5 48.1l-1.5 5.5C523.4 470.1 460.9 525.3 384.6 509.2 209.6 472.1 71.9 334.4 34.8 159.4 18.7 83.1 73.9 20.6 138.5 2.9l5.5-1.5z"
+              />
+            </svg>
+            <div class="flex flex-col justify-center items-center">
+              <span class="text-primary">EMERGENCY</span>
+              <span class="text-secondary">(237) 681-812-255</span>
+            </div>
+          </div>
+          <div class="flex">
+            <svg
+              class="text-accent w-5 h-5 justify-center items-center"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#1F2B6C"
+                d="M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+              />
+            </svg>
+            <div class="flex flex-col justify-center items-center">
+              <span class="text-primary">WORKING HOURS </span>
+              <span class="text-secondary">09:00 - 20:00 everyday</span>
+            </div>
+          </div>
+          <div class="flex">
+            <svg
+              class="text-accent w-5 h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                fill="#1F2B6C"
+                d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"
+              />
+            </svg>
+            <div class="flex flex-col">
+              <span class="text-primary">LOCATION</span>
+              <span class="text-secondary">0123 Some place</span>
+            </div>
+          </div>
+        </div>
+        <!-- blue nav -->
+      </div>
+      <div
+        class="mx-auto flex h-14 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="flex flex-1 items-center justify-around">
+          <nav aria-label="Global" class="hidden md:block">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a class="text-white" href="./index.html"> Home </a>
+              </li>
+
+              <li>
+                <a class="text-white" href="./aboutUs.html"> About Us </a>
+              </li>
+
+              <li>
+                <a class="text-white" href="./service.html"> Service </a>
+              </li>
+
+              <li>
+                <a class="text-white" href="#"> Doctor </a>
+              </li>
+
+              <li>
+                <a class="text-accent font-semibold" href="./news.html">
+                  News
+                </a>
+              </li>
+
+              <li>
+                <a class="text-white" href="#"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <div class="flex justify-center items-center gap-4 text-center">
+              <!-- searching icon -->
+              <svg
+                class="text-accent w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+              >
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+              <!-- appointment button -->
+              <a
+                class="block rounded-3xl bg-accent px-4 py-2 text-primary font-semibold"
+                href="#"
+              >
+                Appoinment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- doctor bg -->
+      <section>
+        <!-- container -->
+        <div class="relative text-white overflow-hidden">
+          <div class="absolute inset-0">
+            <img
+              src="./src/img/AboutUs/bg-doctor.png"
+              alt="Background Image"
+              class="w-full object-cover h-[300px] opacity-50"
+            />
+            <div class="absolute inset-0 opacity-1"></div>
+          </div>
+
+          <!-- text on container -->
+          <div
+            class="relative flex flex-col justify-around h-[400px] top-12 left-[40px]"
+          >
+            <div class="absolute top-10 left-0">
+              <p class="text-sm text-secondary font-medium">HOME / NEWS</p>
+              <h1 class="text-2xl font-bold mb-4 text-primary">Bolgs Posts</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card -->
+      <section>
+        <!-- container -->
+        <div class="grid grid-cols-2 place-content-center gap-5">
+          <!-- 1 -->
+          <div class="grid place-items-center grid-cols-1 my-15 ml-[200px]">
+            <!--card image 1 -->
+            <div class="flex flex-col justify-center items-center w-[600px]">
+              <div class="flex">
+                <img
+                  src="./src/img/AboutUs/first-card.png"
+                  alt="doctor"
+                  class="w-[600px] h-[400px] object-cover"
+                />
+              </div>
+              <!-- one card container -->
+              <div class="flex flex-col p-4">
+                <!-- icon -->
+                <div class="flex text-start">
+                  <div class="flex pr-1 justify-center items-center">
+                    <div class="flex">
+                      <svg
+                        class="h-5 w-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(31, 43, 108)"
+                          d="M120 0c13.3 0 24 10.7 24 24l0 40 160 0 0-40c0-13.3 10.7-24 24-24s24 10.7 24 24l0 40 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-40c0-13.3 10.7-24 24-24zm0 112l-56 0c-8.8 0-16 7.2-16 16l0 48 352 0 0-48c0-8.8-7.2-16-16-16l-264 0zM48 224l0 192c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-192-352 0z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm"
+                        >Monday 05, September 2021</span
+                      >
+                    </div>
+
+                    <div class="flex mx-2">
+                      <svg
+                        class="w-5 h-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm">By Author</span>
+                    </div>
+
+                    <div class="flex justify-center items-center mx-2">
+                      <svg
+                        class="w-3 h-3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z"
+                        />
+                      </svg>
+                      <span class="mx-1">68</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <svg
+                      class="w-3 h-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="rgb(255, 0, 0)"
+                        d="M378.9 80c-27.3 0-53 13.1-69 35.2l-34.4 47.6c-4.5 6.2-11.7 9.9-19.4 9.9s-14.9-3.7-19.4-9.9l-34.4-47.6c-16-22.1-41.7-35.2-69-35.2-47 0-85.1 38.1-85.1 85.1 0 49.9 32 98.4 68.1 142.3 41.1 50 91.4 94 125.9 120.3 3.2 2.4 7.9 4.2 14 4.2s10.8-1.8 14-4.2c34.5-26.3 84.8-70.4 125.9-120.3 36.2-43.9 68.1-92.4 68.1-142.3 0-47-38.1-85.1-85.1-85.1zM271 87.1c25-34.6 65.2-55.1 107.9-55.1 73.5 0 133.1 59.6 133.1 133.1 0 68.6-42.9 128.9-79.1 172.8-44.1 53.6-97.3 100.1-133.8 127.9-12.3 9.4-27.5 14.1-43.1 14.1s-30.8-4.7-43.1-14.1C176.4 438 123.2 391.5 79.1 338 42.9 294.1 0 233.7 0 165.1 0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1l15 20.7 15-20.7z"
+                      />
+                    </svg>
+                    <span class="ml-1">86</span>
+                  </div>
+                </div>
+                <span class="text-secondary text-xl py-2 font-semibold"
+                  >A passion for putting patients first</span
+                >
+                <p class="text-md py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus tenetur nobis rerum nostrum eius minus earum id quis
+                  nemo aperiam? At beatae reprehenderit aliquam iste, laborum
+                  rem harum ea excepturi.
+                </p>
+
+                <!-- button -->
+                <a
+                  class="bg-accent py-1 px-2 rounded-full text-primary w-[160px] justify-center flex"
+                  >Read More →</a
+                >
+              </div>
+            </div>
+            <!--card image 2 -->
+            <div class="flex flex-col justify-center items-center w-[600px]">
+              <div class="flex">
+                <img
+                  src="./src/img/News/second-card.png"
+                  alt="doctor"
+                  class="w-[600px] h-[400px] object-cover"
+                />
+              </div>
+              <!-- one card container -->
+              <div class="flex flex-col p-4">
+                <!-- icon -->
+                <div class="flex text-start">
+                  <div class="flex pr-1 justify-center items-center">
+                    <div class="flex">
+                      <svg
+                        class="h-5 w-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(31, 43, 108)"
+                          d="M120 0c13.3 0 24 10.7 24 24l0 40 160 0 0-40c0-13.3 10.7-24 24-24s24 10.7 24 24l0 40 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-40c0-13.3 10.7-24 24-24zm0 112l-56 0c-8.8 0-16 7.2-16 16l0 48 352 0 0-48c0-8.8-7.2-16-16-16l-264 0zM48 224l0 192c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-192-352 0z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm"
+                        >Monday 05, September 2021</span
+                      >
+                    </div>
+
+                    <div class="flex mx-2">
+                      <svg
+                        class="w-5 h-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm">By Author</span>
+                    </div>
+
+                    <div class="flex justify-center items-center mx-2">
+                      <svg
+                        class="w-3 h-3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z"
+                        />
+                      </svg>
+                      <span class="mx-1">68</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <svg
+                      class="w-3 h-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="rgb(255, 0, 0)"
+                        d="M378.9 80c-27.3 0-53 13.1-69 35.2l-34.4 47.6c-4.5 6.2-11.7 9.9-19.4 9.9s-14.9-3.7-19.4-9.9l-34.4-47.6c-16-22.1-41.7-35.2-69-35.2-47 0-85.1 38.1-85.1 85.1 0 49.9 32 98.4 68.1 142.3 41.1 50 91.4 94 125.9 120.3 3.2 2.4 7.9 4.2 14 4.2s10.8-1.8 14-4.2c34.5-26.3 84.8-70.4 125.9-120.3 36.2-43.9 68.1-92.4 68.1-142.3 0-47-38.1-85.1-85.1-85.1zM271 87.1c25-34.6 65.2-55.1 107.9-55.1 73.5 0 133.1 59.6 133.1 133.1 0 68.6-42.9 128.9-79.1 172.8-44.1 53.6-97.3 100.1-133.8 127.9-12.3 9.4-27.5 14.1-43.1 14.1s-30.8-4.7-43.1-14.1C176.4 438 123.2 391.5 79.1 338 42.9 294.1 0 233.7 0 165.1 0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1l15 20.7 15-20.7z"
+                      />
+                    </svg>
+                    <span class="ml-1">86</span>
+                  </div>
+                </div>
+                <span class="text-secondary text-xl py-2 font-semibold"
+                  >A passion for putting patients first</span
+                >
+                <p class="text-md py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus tenetur nobis rerum nostrum eius minus earum id quis
+                  nemo aperiam? At beatae reprehenderit aliquam iste, laborum
+                  rem harum ea excepturi.
+                </p>
+
+                <!-- button -->
+                <a
+                  class="bg-accent py-1 px-2 rounded-full text-primary w-[160px] justify-center flex"
+                  >Read More →</a
+                >
+              </div>
+            </div>
+            <!--card image 3 -->
+            <div class="flex flex-col justify-center items-center w-[600px]">
+              <div class="flex">
+                <img
+                  src="./src/img/News/third-card.png"
+                  alt="doctor"
+                  class="w-[600px] h-[400px] object-cover"
+                />
+              </div>
+              <!-- one card container -->
+              <div class="flex flex-col p-4">
+                <!-- icon -->
+                <div class="flex text-start">
+                  <div class="flex pr-1 justify-center items-center">
+                    <div class="flex">
+                      <svg
+                        class="h-5 w-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(31, 43, 108)"
+                          d="M120 0c13.3 0 24 10.7 24 24l0 40 160 0 0-40c0-13.3 10.7-24 24-24s24 10.7 24 24l0 40 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-40c0-13.3 10.7-24 24-24zm0 112l-56 0c-8.8 0-16 7.2-16 16l0 48 352 0 0-48c0-8.8-7.2-16-16-16l-264 0zM48 224l0 192c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-192-352 0z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm"
+                        >Monday 05, September 2021</span
+                      >
+                    </div>
+
+                    <div class="flex mx-2">
+                      <svg
+                        class="w-5 h-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm">By Author</span>
+                    </div>
+
+                    <div class="flex justify-center items-center mx-2">
+                      <svg
+                        class="w-3 h-3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z"
+                        />
+                      </svg>
+                      <span class="mx-1">68</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <svg
+                      class="w-3 h-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="rgb(255, 0, 0)"
+                        d="M378.9 80c-27.3 0-53 13.1-69 35.2l-34.4 47.6c-4.5 6.2-11.7 9.9-19.4 9.9s-14.9-3.7-19.4-9.9l-34.4-47.6c-16-22.1-41.7-35.2-69-35.2-47 0-85.1 38.1-85.1 85.1 0 49.9 32 98.4 68.1 142.3 41.1 50 91.4 94 125.9 120.3 3.2 2.4 7.9 4.2 14 4.2s10.8-1.8 14-4.2c34.5-26.3 84.8-70.4 125.9-120.3 36.2-43.9 68.1-92.4 68.1-142.3 0-47-38.1-85.1-85.1-85.1zM271 87.1c25-34.6 65.2-55.1 107.9-55.1 73.5 0 133.1 59.6 133.1 133.1 0 68.6-42.9 128.9-79.1 172.8-44.1 53.6-97.3 100.1-133.8 127.9-12.3 9.4-27.5 14.1-43.1 14.1s-30.8-4.7-43.1-14.1C176.4 438 123.2 391.5 79.1 338 42.9 294.1 0 233.7 0 165.1 0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1l15 20.7 15-20.7z"
+                      />
+                    </svg>
+                    <span class="ml-1">86</span>
+                  </div>
+                </div>
+                <span class="text-secondary text-xl py-2 font-semibold"
+                  >A passion for putting patients first</span
+                >
+                <p class="text-md py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus tenetur nobis rerum nostrum eius minus earum id quis
+                  nemo aperiam? At beatae reprehenderit aliquam iste, laborum
+                  rem harum ea excepturi.
+                </p>
+
+                <!-- button -->
+                <a
+                  class="bg-accent py-1 px-2 rounded-full text-primary w-[160px] justify-center flex"
+                  >Read More →</a
+                >
+              </div>
+            </div>
+            <!--card image 4 -->
+            <div class="flex flex-col justify-center items-center w-[600px]">
+              <div class="flex">
+                <img
+                  src="./src/img/News/fourth-card.png"
+                  alt="doctor"
+                  class="w-[600px] h-[400px] object-cover"
+                />
+              </div>
+              <!-- one card container -->
+              <div class="flex flex-col p-4">
+                <!-- icon -->
+                <div class="flex text-start">
+                  <div class="flex pr-1 justify-center items-center">
+                    <div class="flex">
+                      <svg
+                        class="h-5 w-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(31, 43, 108)"
+                          d="M120 0c13.3 0 24 10.7 24 24l0 40 160 0 0-40c0-13.3 10.7-24 24-24s24 10.7 24 24l0 40 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-40c0-13.3 10.7-24 24-24zm0 112l-56 0c-8.8 0-16 7.2-16 16l0 48 352 0 0-48c0-8.8-7.2-16-16-16l-264 0zM48 224l0 192c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-192-352 0z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm"
+                        >Monday 05, September 2021</span
+                      >
+                    </div>
+
+                    <div class="flex mx-2">
+                      <svg
+                        class="w-5 h-5 mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"
+                        />
+                      </svg>
+                      <span class="text-primary text-sm">By Author</span>
+                    </div>
+
+                    <div class="flex justify-center items-center mx-2">
+                      <svg
+                        class="w-3 h-3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="rgb(116, 192, 252)"
+                          d="M288 80C222.8 80 169.2 109.6 128.1 147.7 89.6 183.5 63 226 49.4 256 63 286 89.6 328.5 128.1 364.3 169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256 513 226 486.4 183.5 447.9 147.7 406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1 3.3 7.9 3.3 16.7 0 24.6-14.9 35.7-46.2 87.7-93 131.1-47.1 43.7-111.8 80.6-192.6 80.6S142.5 443.2 95.4 399.4c-46.8-43.5-78.1-95.4-93-131.1-3.3-7.9-3.3-16.7 0-24.6 14.9-35.7 46.2-87.7 93-131.1zM288 336c44.2 0 80-35.8 80-80 0-29.6-16.1-55.5-40-69.3-1.4 59.7-49.6 107.9-109.3 109.3 13.8 23.9 39.7 40 69.3 40zm-79.6-88.4c2.5 .3 5 .4 7.6 .4 35.3 0 64-28.7 64-64 0-2.6-.2-5.1-.4-7.6-37.4 3.9-67.2 33.7-71.1 71.1zm45.6-115c10.8-3 22.2-4.5 33.9-4.5 8.8 0 17.5 .9 25.8 2.6 .3 .1 .5 .1 .8 .2 57.9 12.2 101.4 63.7 101.4 125.2 0 70.7-57.3 128-128 128-61.6 0-113-43.5-125.2-101.4-1.8-8.6-2.8-17.5-2.8-26.6 0-11 1.4-21.8 4-32 .2-.7 .3-1.3 .5-1.9 11.9-43.4 46.1-77.6 89.5-89.5z"
+                        />
+                      </svg>
+                      <span class="mx-1">68</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <svg
+                      class="w-3 h-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="rgb(255, 0, 0)"
+                        d="M378.9 80c-27.3 0-53 13.1-69 35.2l-34.4 47.6c-4.5 6.2-11.7 9.9-19.4 9.9s-14.9-3.7-19.4-9.9l-34.4-47.6c-16-22.1-41.7-35.2-69-35.2-47 0-85.1 38.1-85.1 85.1 0 49.9 32 98.4 68.1 142.3 41.1 50 91.4 94 125.9 120.3 3.2 2.4 7.9 4.2 14 4.2s10.8-1.8 14-4.2c34.5-26.3 84.8-70.4 125.9-120.3 36.2-43.9 68.1-92.4 68.1-142.3 0-47-38.1-85.1-85.1-85.1zM271 87.1c25-34.6 65.2-55.1 107.9-55.1 73.5 0 133.1 59.6 133.1 133.1 0 68.6-42.9 128.9-79.1 172.8-44.1 53.6-97.3 100.1-133.8 127.9-12.3 9.4-27.5 14.1-43.1 14.1s-30.8-4.7-43.1-14.1C176.4 438 123.2 391.5 79.1 338 42.9 294.1 0 233.7 0 165.1 0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1l15 20.7 15-20.7z"
+                      />
+                    </svg>
+                    <span class="ml-1">86</span>
+                  </div>
+                </div>
+                <span class="text-secondary text-xl py-2 font-semibold"
+                  >A passion for putting patients first</span
+                >
+                <p class="text-md py-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus tenetur nobis rerum nostrum eius minus earum id quis
+                  nemo aperiam? At beatae reprehenderit aliquam iste, laborum
+                  rem harum ea excepturi.
+                </p>
+
+                <!-- button -->
+                <a
+                  class="bg-accent py-1 px-2 rounded-full text-primary w-[160px] justify-center flex"
+                  >Read More →</a
+                >
+              </div>
+            </div>
+
+            <!-- icon -->
+            <div class="w-[600px] flex justify-around">
+              <div class="text-accent">
+                <p>← Previous Page</p>
+              </div>
+
+              <div class="flex items-center gap-4 text-primary">
+                <span class="text-secondary">1-2-3-4-5</span>
+              </div>
+
+              <div class="items-center text-secondary">
+                <p>Next Page →</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+
+          <div class="w-[500px] max-w-sm ml-[20] px-4 py-8 my-15">
+            <div class="w-full mt-[-40px]">
+              <div class="flex items-center bg-primary rounded-lg px-4 py-4">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="flex-1 text-white"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-4.35-4.35m1.85-5.4a7.25 7.25 0 11-14.5 0 7.25 7.25 0 0114.5 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="text-primary text-2xl font-bold">Recent Posts</p>
+            <div class="mt-6">
+              <ul class="space-y-6">
+                <li class="flex gap-6 items-start">
+                  <img
+                    src="./src/img/News/small-card-1.png"
+                    alt=""
+                    class="w-20 h-20 rounded-xl object-cover"
+                  />
+
+                  <div class="flex flex-col">
+                    <span class="text-secondary text-sm mb-2">
+                      Monday 05, September 2021
+                    </span>
+
+                    <p class="font-semibold">
+                      This Article's Title goes Here, but not too long.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                  <img
+                    src="./src/img/News/small-card-2.png"
+                    alt=""
+                    class="w-20 h-20 rounded-xl object-cover"
+                  />
+
+                  <div class="flex flex-col">
+                    <span class="text-secondary mb-2">
+                      Monday 05, September 2021
+                    </span>
+
+                    <p class="font-semibold">
+                      This Article's Title goes Here, but not too long.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                  <img
+                    src="./src/img/News/small-card-3.png"
+                    alt=""
+                    class="w-20 h-20 rounded-xl object-cover"
+                  />
+
+                  <div class="flex flex-col">
+                    <span class="text-secondary mb-2">
+                      Monday 05, September 2021
+                    </span>
+
+                    <p class="font-semibold">
+                      This Article's Title goes Here, but not too long.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                  <img
+                    src="./src/img/News/small-card-4.png"
+                    alt=""
+                    class="w-20 h-20 rounded-xl object-cover"
+                  />
+
+                  <div class="flex flex-col">
+                    <span class="text-secondary mb-2">
+                      Monday 05, September 2021
+                    </span>
+
+                    <p class="font-semibold">
+                      This Article's Title goes Here, but not too long.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                  <img
+                    src="./src/img/News/small-card-5.png"
+                    alt=""
+                    class="w-20 h-20 rounded-xl object-cover"
+                  />
+
+                  <div class="flex flex-col">
+                    <span class="text-secondary mb-2">
+                      Monday 05, September 2021
+                    </span>
+
+                    <p class="font-semibold">
+                      This Article's Title goes Here, but not too long.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-6 items-start">
+                  <img
+                    src="./src/img/News/small-card-6.png"
+                    alt=""
+                    class="w-20 h-20 rounded-xl object-cover"
+                  />
+
+                  <div class="flex flex-col">
+                    <span class="text-secondary mb-2">
+                      Monday 05, September 2021
+                    </span>
+
+                    <p class="font-semibold">
+                      This Article's Title goes Here, but not too long.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- category -->
+            <div class="w-[480px] max-w-sm ml-[20] px-2 py-4 my-15 p">
+              <p class="text-primary text-2xl font-bold">Categories</p>
+              <div class="flex justify-between">
+                <span>Professional</span>
+                <span class="bg-secondary rounded-full px-2">3</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Health Care</span>
+                <span class="bg-secondary rounded-full px-2">5</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Medical</span>
+                <span class="bg-secondary rounded-full px-2">8</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Professional</span>
+                <span class="bg-secondary rounded-full px-2">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="flex flex-col items-center mb-[70px]">
+          <p class="text-secondary font-semibold">GET IN TOUCH</p>
+          <p class="text-primary font-bold text-[22px]">Contact</p>
+        </div>
+        <div class="flex justify-center mb-[50px]">
+          <div
+            class="grid w-fit gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1"
+          >
+            <!-- 1 card -->
+            <div
+              class="w-[240px] h-[240px] bg-accent rounded-lg text-primary flex justify-center items-center"
+            >
+              <div class="flex flex-col">
+                <svg
+                  class="text-primary w-6 h-6 mb-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    fill="#1F2B6C"
+                    d="M344-32c128.1 0 232 103.9 232 232 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM320 88c0-13.3 10.7-24 24-24 75.1 0 136 60.9 136 136 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88-13.3 0-24-10.7-24-24zM144.1 1.4c19.7-5.4 40.3 4.7 48.1 23.5l40.5 97.3c6.9 16.5 2.1 35.6-11.8 47l-44.1 36.1c32.5 71.6 89 130 159.3 164.9L374.7 323c11.3-13.9 30.4-18.6 47-11.8L519 351.8c18.8 7.8 28.9 28.4 23.5 48.1l-1.5 5.5C523.4 470.1 460.9 525.3 384.6 509.2 209.6 472.1 71.9 334.4 34.8 159.4 18.7 83.1 73.9 20.6 138.5 2.9l5.5-1.5z"
+                  />
+                </svg>
+                <span>EMERGENCY</span>
+                <span>(237) 681-812-255</span>
+                <span>(237) 666-331-894</span>
+              </div>
+            </div>
+            <!-- 2 card -->
+            <div
+              class="w-[240px] h-[240px] bg-primary rounded-lg text-accent flex justify-center items-center"
+            >
+              <div class="flex flex-col">
+                <svg
+                  class="text-accent w-6 h-6 mb-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    fill="rgb(116, 192, 252)"
+                    d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"
+                  />
+                </svg>
+                <span>LOCATION</span>
+                <span>0123 Some place</span>
+                <span>9876 Some country</span>
+              </div>
+            </div>
+            <!-- 3 card -->
+            <div
+              class="w-[240px] h-[240px] bg-accent rounded-lg text-primary flex justify-center items-center"
+            >
+              <div class="flex flex-col">
+                <svg
+                  fill="#1F2B6C"
+                  class="text-primary w-6 h-6 mb-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"
+                  />
+                </svg>
+                <span>EMAIL</span>
+                <span>fildineeesoe@gmil.com </span>
+                <span>myebstudios@gmail.com</span>
+              </div>
+            </div>
+            <!-- 4 card -->
+            <div
+              class="w-[240px] h-[240px] bg-accent rounded-lg text-primary flex justify-center items-center"
+            >
+              <div class="flex flex-col">
+                <svg
+                  class="text-accent w-6 h-6 mb-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#1F2B6C"
+                    d="M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                  />
+                </svg>
+                <span>WORKING HOURS </span>
+                <span>Mon-Sat 9:00-20:00</span>
+                <span>Sunday Emergency only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div
+        class="w-auto m-auto bg-primary text-stone-200 pt-[100px] pb-[100px] px-[100px]"
+      >
+        <div class="flex justify-around w-full m-auto">
+          <div class="flex flex-col w-[400px]">
+            <p class="font-bold text-[32px] text-accent mb-5">MEDDICAL</p>
+            <p>Leading the Way in Medical Execellence, Trusted Care.</p>
+          </div>
+          <div class="flex flex-col w-[400px]">
+            <p class="font-bold mb-5">Important Links</p>
+            <p>Appointment</p>
+            <p>Doctors</p>
+            <p>Services About Us</p>
+            <p>About Us</p>
+          </div>
+          <div>
+            <div class="flex flex-col w-[400px]">
+              <p class="font-bold mb-5">Contact Us</p>
+              <p>Call: (237) 681-812-255</p>
+              <p>Email: fildineesoe@gmail.com</p>
+              <p>Address: 0123 Some place</p>
+              <p>Some country</p>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col w-[400px]">
+              <p class="font-bold mb-5">Newsetter</p>
+              <!-- send email -->
+              <div class="relative w-[300px]">
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                  class="w-[300px] bg-accent text-primary rounded-md px-4 py-2"
+                />
+                <div class="absolute inset-y-0 right-3 flex items-center">
+                  <svg
+                    class="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#F6F6F6"
+                      d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM371 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2 .5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3 .6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7 .5 3.2 .6 6.5 .4 9.8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-16 mt-10">
+          <hr class="border-t border-white" />
+        </div>
+        <!-- copy right -->
+        <div class="flex justify-around mt-[50px] w-auto">
+          <p>&copy; 2021 Hospital's name All Rights Reserved by PNTEC-LTD</p>
+          <div class="flex px-3 justify-center items-center">
+            <svg
+              class="w-6 h-6 m-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="rgb(116, 192, 252)"
+                d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
+              />
+            </svg>
+            <svg
+              class="w-6 h-6 m-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="rgb(116, 192, 252)"
+                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z"
+              />
+            </svg>
+            <svg
+              class="w-6 h-6 m-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="rgb(116, 192, 252)"
+                d="M194.4 211.7a53.3 53.3 0 1 0 59.2 88.6 53.3 53.3 0 1 0 -59.2-88.6zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12-18.1-7.1-57.6-6.8-83.1-6.5-4.1 0-7.9 .1-11.2 .1s-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2 0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2 2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5 4.1 0 7.9-.1 11.2-.1s7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5 6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83 0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83-2.7-6.9-6.8-13.1-12-18.4l0 .2zm-67.1 44.5c18.1 12.1 30.6 30.9 34.9 52.2s-.2 43.5-12.3 61.6c-6 9-13.7 16.6-22.6 22.6s-19 10.1-29.6 12.2c-21.3 4.2-43.5-.2-61.6-12.3s-30.6-30.9-34.9-52.2 .2-43.5 12.2-61.6 30.9-30.6 52.2-34.9 43.5 .2 61.6 12.2l.1 0zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1 2.6-7.1 5.2-9.8 6.1-4.5 9.8-5.2 7.6-.4 11.1 1.1 6.5 3.9 8.6 7 3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2-3.9 3.2-6.2 4.2-4.8 1.5-7.3 1.5c-3.8 0-7.5-1.1-10.6-3.2l-.1 0zM448 96c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320zM357 389c-18.7 18.7-41.4 24.6-67 25.9-26.4 1.5-105.6 1.5-132 0-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132 1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0 25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9-1.3 25.6-7.1 48.3-25.8 67l0 .1z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
