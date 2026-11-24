@@ -4,9 +4,9 @@
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
-    "dev": "node init && tailwindcss -i ./style.css -o ./output.css --watch",
+    "dev": "tailwindcss -i ./style.css -o ./output.css --watch",
     "serve": "browser-sync start --server --files \"*.html, output.css\" --reload-delay 300 --reload-debounce 500 --watch",
-    "start": "node init && npm-run-all --parallel dev serve"
+    "start": "npm-run-all --parallel dev serve"
   },
   "devDependencies": {
     "browser-sync": "^3.0.4",
